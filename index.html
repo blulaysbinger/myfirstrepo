@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreya Shree | 18yo Polymath, Doer & Future Leader</title>
+  <meta name="description" content="Portfolio of Shreya Shree — 18-year-old multidisciplinary doer passionate about Aerospace, Smart Textiles, Tech, and Business. Skater, dancer, artist, and relentless learner.">
+  <meta name="author" content="Shreya Shree">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans & Syne -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+  <!-- Glowing Cursor Follower Elements -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Background Animated Mesh -->
+  <div class="ambient-mesh">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <div class="mesh-grid-overlay"></div>
+  </div>
+
+  <!-- Notification Toast Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" id="brandLogo">
+        <span class="logo-symbol">⚡</span>
+        <span class="logo-text">SHREYA<span class="accent-text">.SHREE</span></span>
+        <span class="badge-mini">18yo DOER</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="#about" class="nav-link" id="navAbout">The Mindset</a>
+        <a href="#industries" class="nav-link" id="navIndustries">Domains</a>
+        <a href="#creative" class="nav-link" id="navCreative">Creative Lab</a>
+        <a href="#leadership" class="nav-link" id="navLeadership">Leadership</a>
+        <a href="#terminal" class="nav-link" id="navTerminal">Interactive</a>
+        <a href="#contact" class="nav-link nav-cta" id="navContact">Let's Connect</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Sound Effect Toggle Button -->
+        <button class="icon-btn" id="soundToggle" aria-label="Toggle UI Sound Effects" title="Toggle gentle interaction audio">
+          <span class="sound-icon">🔈</span>
+        </button>
+        <!-- Theme Toggle Button -->
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle Theme Mode" title="Toggle Visual Atmosphere">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <!-- Mobile Menu Hamburger -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Mobile Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill-badge" id="heroBadge">
+            <span class="pulse-dot"></span>
+            <span>18-Year-Old Polymath • Unstoppable Doer • Emerging Leader</span>
+          </div>
+
+          <h1 class="hero-title" id="mainHeading">
+            "Jack of all trades, <br>
+            <span class="gradient-text">master of none</span> — <br>
+            oftentimes better than <span class="highlight-underline">master of one</span>."
+          </h1>
+
+          <p class="hero-description">
+            Hey there! I am <strong>Shreya Shree</strong>. An 18-year-old multidisciplinary powerhouse with relentless curiosity. 
+            While standard marksheets measured me at 70th percentile in 12th, the real world measures execution — and I am a 
+            <strong>huge doer</strong> who brings energy, vision, and cross-pollinated thinking to every challenge.
+          </p>
+
+          <!-- Core Interest Tags -->
+          <div class="hero-tags">
+            <span class="tag-chip">🚀 Aerospace</span>
+            <span class="tag-chip">🧵 Smart Textiles</span>
+            <span class="tag-chip">💻 Tech Systems</span>
+            <span class="tag-chip">💼 Business Strategy</span>
+            <span class="tag-chip">🛼 Roller Skating</span>
+            <span class="tag-chip">🎨 Fine Arts & Dance</span>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#industries" class="btn btn-primary" id="btnExplore">
+              <span>Explore My Universe</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="btnContact">
+              <span>Connect with Me</span>
+            </a>
+            <button class="btn btn-outline" id="btnCopyEmail" data-copy="shreyashree.connect@gmail.com">
+              <span>Copy Email</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </button>
+          </div>
+
+          <!-- Quick Stats Ribbon -->
+          <div class="hero-stats-ribbon">
+            <div class="stat-card">
+              <span class="stat-num" data-target="70">70%ile</span>
+              <span class="stat-label">12th Grade Metric (Real-world grit: 100%)</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="4">4+</span>
+              <span class="stat-label">Creative Crafts (Skate, Dance, Paint, Music)</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Hunger to Learn & Lead</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper" id="avatar3DCard">
+            <div class="avatar-glow-ring"></div>
+            <div class="avatar-frame">
+              <img src="assets/images/shreya_avatar.jpg" alt="Artistic 3D portrait of Shreya Shree with roller skates, aerospace patches and creative art sparks" class="hero-avatar-img" id="heroAvatarImg">
+              
+              <!-- Floating Interactive Badges -->
+              <div class="floating-badge badge-skate" title="Roller Skater">
+                <span class="floating-icon">🛼</span>
+                <span class="floating-text">Skater Flow</span>
+              </div>
+              <div class="floating-badge badge-rocket" title="Aerospace Explorer">
+                <span class="floating-icon">🚀</span>
+                <span class="floating-text">Aero & Orbit</span>
+              </div>
+              <div class="floating-badge badge-textile" title="Textile Design">
+                <span class="floating-icon">🧵</span>
+                <span class="floating-text">Fabric Tech</span>
+              </div>
+              <div class="floating-badge badge-lead" title="Leadership Personality">
+                <span class="floating-icon">👑</span>
+                <span class="floating-text">Natural Leader</span>
+              </div>
+            </div>
+            <div class="avatar-caption">
+              <p><strong>Shreya Shree</strong> • 18 • Polymathic Creator & Thinker</p>
+              <span class="status-indicator"><span class="status-dot"></span> Ready to collaborate & build</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy & The 70% Paradox Section -->
+    <section class="section philosophy-section" id="about">
+      <div id="philosophy"></div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">UNAPOLOGETIC MINDSET</span>
+          <h2 class="section-title">The "70% Paradox" & The Polymath Advantage</h2>
+          <p class="section-subtitle">
+            Why standardized tests only measure standardized memory, while the future belongs to fearless connectors who learn fast and execute relentlessly.
+          </p>
+        </div>
+
+        <div class="philosophy-grid">
+          <div class="glass-card quote-feature-card">
+            <div class="quote-mark">“</div>
+            <h3 class="quote-text">
+              "A jack of all trades is a master of none, but oftentimes better than a master of one."
+            </h3>
+            <p class="quote-reflection">
+              Most people stop quoting the phrase halfway. They treat being interested in multiple things as a defect. 
+              To me, it is the ultimate superpower. Innovation doesn't happen in single silos; it ignites at the intersection 
+              where an aerospace engineer understands composite textiles, where a coder moves with the rhythm of a dancer, 
+              and where an artist thinks with the discipline of a business strategist.
+            </p>
+            <div class="card-footer-author">
+              <div class="author-avatar-mini">SS</div>
+              <div>
+                <strong>Shreya Shree</strong>
+                <small>Believer in cross-disciplinary mastery</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card paradox-card">
+            <div class="paradox-header">
+              <span class="badge-amber">Authentic Truth</span>
+              <h3>The 70 Percentile in 12th: What It Really Taught Me</h3>
+            </div>
+            <p>
+              Let’s be real: I scored around the 70th percentile in class 12th. On traditional academic scorecards, that’s labeled "pretty average." 
+              But here is what standard rote-memorization exams don't measure:
+            </p>
+            <ul class="paradox-list">
+              <li>
+                <div class="list-bullet">01</div>
+                <div>
+                  <strong>High Agency & Execution:</strong> When an idea hits me, I don't wait for permission or perfect conditions. I start building, practicing, and testing immediately.
+                </div>
+              </li>
+              <li>
+                <div class="list-bullet">02</div>
+                <div>
+                  <strong>Tenacity From the Rink:</strong> On roller skates, you fall dozens of times before you glide gracefully. I have skin in the game and an appetite for resilience.
+                </div>
+              </li>
+              <li>
+                <div class="list-bullet">03</div>
+                <div>
+                  <strong>Curiosity That Can't Be Confined:</strong> Confining my mind to one subject felt unnatural when the entire world is waiting to be explored.
+                </div>
+              </li>
+              <li>
+                <div class="list-bullet">04</div>
+                <div>
+                  <strong>Natural Leadership:</strong> People don't follow test scores; they follow clarity, empathy, energy, and genuine belief in what’s possible.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Multi-Domain Exploration (Aerospace, Tech, Textiles, Business) -->
+    <section class="section industries-section" id="industries">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">THE MULTI-DOMAIN COMPASS</span>
+          <h2 class="section-title">Where My Passion & Ambition Converge</h2>
+          <p class="section-subtitle">
+            Four diverse industries. One unified vision. Here is how I look at the sectors shaping our tomorrow.
+          </p>
+        </div>
+
+        <!-- Industry Filter / Tab Switcher -->
+        <div class="industry-tabs" role="tablist">
+          <button class="tab-btn active" data-filter="all" id="tabAll">All Domains (4)</button>
+          <button class="tab-btn" data-filter="aerospace" id="tabAerospace">🚀 Aerospace</button>
+          <button class="tab-btn" data-filter="textiles" id="tabTextiles">🧵 Smart Textiles</button>
+          <button class="tab-btn" data-filter="tech" id="tabTech">💻 Tech & Code</button>
+          <button class="tab-btn" data-filter="business" id="tabBusiness">💼 Business & Leadership</button>
+        </div>
+
+        <div class="industry-grid" id="industryGrid">
+          <!-- Card 1: Aerospace -->
+          <article class="industry-card" data-category="aerospace" id="cardAerospace">
+            <div class="card-media">
+              <img src="assets/images/aerospace_tech.jpg" alt="Futuristic aerospace concept blueprint and supersonic propulsion telemetry" loading="lazy">
+              <span class="card-tag aerospace-tag">Exploration & Physics</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="meta-icon">🚀</span>
+                <span class="meta-label">Aerospace & Flight</span>
+              </div>
+              <h3 class="card-title">Propulsion, Orbit & The Unknown</h3>
+              <p class="card-text">
+                Fascinated by aerodynamics, orbital trajectories, and space vehicle architecture. 
+                I study how advanced propulsion and lighter-than-air structures can redefine humanity's transit 
+                from Earth's atmosphere to the stars.
+              </p>
+              <div class="card-highlights">
+                <span class="chip">Aerodynamics</span>
+                <span class="chip">Composite Materials</span>
+                <span class="chip">Orbital Mechanics</span>
+                <span class="chip">Satellite Tech</span>
+              </div>
+              <div class="card-action">
+                <button class="link-btn open-modal-btn" data-modal="modal-aero">
+                  <span>Read My Vision</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Smart Textiles -->
+          <article class="industry-card" data-category="textiles" id="cardTextiles">
+            <div class="card-media">
+              <img src="assets/images/textile_smartfabrics.jpg" alt="Futuristic smart textile workshop with illuminated threads and digital loom" loading="lazy">
+              <span class="card-tag textile-tag">Material Science</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="meta-icon">🧵</span>
+                <span class="meta-label">Textile & Smart Fabrics</span>
+              </div>
+              <h3 class="card-title">Where Weaving Meets Wearable Tech</h3>
+              <p class="card-text">
+                Textiles are the closest technology to human skin. I am drawn to smart fabrics, conductive threads, 
+                biomaterials, and how sustainable textile manufacturing can transform athletic performance, space suits, and everyday life.
+              </p>
+              <div class="card-highlights">
+                <span class="chip">Smart Weaves</span>
+                <span class="chip">Biomimetic Fibers</span>
+                <span class="chip">Wearable Sensors</span>
+                <span class="chip">Sustainable Fashion</span>
+              </div>
+              <div class="card-action">
+                <button class="link-btn open-modal-btn" data-modal="modal-textile">
+                  <span>Read My Vision</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Tech & Software -->
+          <article class="industry-card" data-category="tech" id="cardTech">
+            <div class="card-media">
+              <div class="tech-graphic-bg">
+                <div class="code-terminal-preview">
+                  <div class="terminal-dots"><span class="red"></span><span class="yellow"></span><span class="green"></span></div>
+                  <pre><code>const shreya = {
+  curiosity: Infinity,
+  energy: "Limitless",
+  action: () => buildNextGen()
+};</code></pre>
+                </div>
+              </div>
+              <span class="card-tag tech-tag">Digital Systems</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="meta-icon">💻</span>
+                <span class="meta-label">Technology & Software</span>
+              </div>
+              <h3 class="card-title">Code, Automation & Systems Thinking</h3>
+              <p class="card-text">
+                Technology is the ultimate leverage. I dive into web development, interactive software, automation, 
+                and algorithmic reasoning. To me, code is digital clay for turning ambitious concepts into functional reality.
+              </p>
+              <div class="card-highlights">
+                <span class="chip">HTML5 / CSS3 / JS</span>
+                <span class="chip">Interface Design</span>
+                <span class="chip">Automation</span>
+                <span class="chip">Problem Solving</span>
+              </div>
+              <div class="card-action">
+                <button class="link-btn open-modal-btn" data-modal="modal-tech">
+                  <span>Read My Vision</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Business & Leadership -->
+          <article class="industry-card" data-category="business" id="cardBusiness">
+            <div class="card-media">
+              <div class="business-graphic-bg">
+                <div class="strategy-diagram">
+                  <div class="diag-node">Vision</div>
+                  <div class="diag-line">→</div>
+                  <div class="diag-node highlight">Execution</div>
+                  <div class="diag-line">→</div>
+                  <div class="diag-node">Impact</div>
+                </div>
+              </div>
+              <span class="card-tag business-tag">Strategy & Scaling</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="meta-icon">💼</span>
+                <span class="meta-label">Business & Venture</span>
+              </div>
+              <h3 class="card-title">Commercialization, Strategy & Drive</h3>
+              <p class="card-text">
+                Great ideas mean nothing without viable business models and market execution. I study value creation, 
+                brand differentiation, user economics, and what it takes to organize people to achieve massive goals together.
+              </p>
+              <div class="card-highlights">
+                <span class="chip">Venture Strategy</span>
+                <span class="chip">Brand Narrative</span>
+                <span class="chip">Market Dynamics</span>
+                <span class="chip">Team Orchestration</span>
+              </div>
+              <div class="card-action">
+                <button class="link-btn open-modal-btn" data-modal="modal-business">
+                  <span>Read My Vision</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Creative Sandbox: Skates, Dance, Music, Painting -->
+    <section class="section creative-section" id="creative">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">KINETIC & AESTHETIC SOUL</span>
+          <h2 class="section-title">The Creative Sandbox: Where Energy Unwinds</h2>
+          <p class="section-subtitle">
+            Movement, sound, colors, and wheels. These aren't just hobbies; they are how I train focus, rhythm, balance, and spatial intuition.
+          </p>
+        </div>
+
+        <div class="creative-hero-banner">
+          <img src="assets/images/creative_arts_vibe.jpg" alt="Creative studio with roller skates, acoustic guitar, synths, and colorful paintings" loading="lazy">
+          <div class="banner-overlay-content">
+            <h3>"Art teaches me patience. Skating teaches me velocity."</h3>
+            <p>Every creative expression directly sharpens my analytical and leadership mind.</p>
+          </div>
+        </div>
+
+        <!-- 4 Creative Pillars Cards -->
+        <div class="creative-grid">
+          <!-- Skill: Roller Skating -->
+          <div class="creative-card" id="cardSkate">
+            <div class="creative-card-top">
+              <span class="creative-icon">🛼</span>
+              <span class="creative-pill">Kinetic Agility</span>
+            </div>
+            <h3 class="creative-card-title">Roller Skating</h3>
+            <p class="creative-card-desc">
+              Carving turns on wheels taught me momentum, fearlessness, and balance. If you fall, you reset your stance, adjust your center of gravity, and roll faster.
+            </p>
+            <div class="creative-meta-points">
+              <span>⚡ Reflex & Speed</span>
+              <span>🛡️ Zero Fear of Falling</span>
+            </div>
+          </div>
+
+          <!-- Skill: Dance -->
+          <div class="creative-card" id="cardDance">
+            <div class="creative-card-top">
+              <span class="creative-icon">💃</span>
+              <span class="creative-pill">Spatial Rhythm</span>
+            </div>
+            <h3 class="creative-card-title">Dance & Choreography</h3>
+            <p class="creative-card-desc">
+              Translating beats into physical expression. Dance taught me body language, stage confidence, synchronizing with others, and leading the room without saying a single word.
+            </p>
+            <div class="creative-meta-points">
+              <span>🎶 Beat Synchronization</span>
+              <span>✨ Stage Presence</span>
+            </div>
+          </div>
+
+          <!-- Skill: Music -->
+          <div class="creative-card" id="cardMusic">
+            <div class="creative-card-top">
+              <span class="creative-icon">🎵</span>
+              <span class="creative-pill">Harmonic Flow</span>
+            </div>
+            <h3 class="creative-card-title">Music & Soundscapes</h3>
+            <p class="creative-card-desc">
+              Listening to counterpoints, tempo, and layered melodies. Music gives me deep work flow states and sharpens my pattern recognition across engineering and design.
+            </p>
+            <div class="creative-meta-points">
+              <span>🎧 Deep Work Flow</span>
+              <span>🎹 Harmonic Patterning</span>
+            </div>
+          </div>
+
+          <!-- Skill: Painting -->
+          <div class="creative-card" id="cardPainting">
+            <div class="creative-card-top">
+              <span class="creative-icon">🎨</span>
+              <span class="creative-pill">Visual Chemistry</span>
+            </div>
+            <h3 class="creative-card-title">Painting & Fine Art</h3>
+            <p class="creative-card-desc">
+              Splashing vibrant acrylics and mixed media onto blank canvases. Understanding color theory, texture, and visual composition makes me a natural at UI and aesthetic design.
+            </p>
+            <div class="creative-meta-points">
+              <span>🖌️ Color Theory</span>
+              <span>👁️ Spatial Composition</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Synergy Generator -->
+        <div class="synergy-generator glass-card" id="synergyTool">
+          <div class="synergy-header">
+            <div>
+              <span class="badge-mini">INTERACTIVE EXPERIMENT</span>
+              <h3>The Cross-Pollination Engine</h3>
+              <p>Select any two passions to see how Shreya combines them into a unique edge:</p>
+            </div>
+          </div>
+
+          <div class="synergy-selector-row">
+            <div class="select-col">
+              <label for="synergyA">Craft A:</label>
+              <select id="synergyA" class="form-select">
+                <option value="skating">🛼 Roller Skating (Grit & Flow)</option>
+                <option value="dance">💃 Dance (Rhythm & Presence)</option>
+                <option value="painting">🎨 Painting (Visuals & Color)</option>
+                <option value="music">🎵 Music (Harmonics & Patterns)</option>
+              </select>
+            </div>
+
+            <div class="synergy-plus">+</div>
+
+            <div class="select-col">
+              <label for="synergyB">Domain B:</label>
+              <select id="synergyB" class="form-select">
+                <option value="aerospace">🚀 Aerospace (Physics & Orbit)</option>
+                <option value="textiles">🧵 Smart Textiles (Materials)</option>
+                <option value="tech">💻 Tech & Code (Systems)</option>
+                <option value="business">💼 Business (Leadership & Scale)</option>
+              </select>
+            </div>
+
+            <button class="btn btn-primary" id="btnCalculateSynergy">
+              <span>Fuse Disciplines</span>
+            </button>
+          </div>
+
+          <div class="synergy-result-box" id="synergyResult">
+            <div class="result-icon" id="resultIcon">⚡</div>
+            <div class="result-details">
+              <h4 id="resultTitle">Skating + Aerospace = Kinematic Trajectory & Fluid Momentum</h4>
+              <p id="resultDesc">
+                Understanding friction, centrifugal force, and velocity on roller skates provides visceral, intuitive physics intuition that textbook formulas alone cannot impart.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership & Growth Section -->
+    <section class="section leadership-section" id="leadership">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">LEADERSHIP DNA</span>
+          <h2 class="section-title">Why Leadership is in My Nature</h2>
+          <p class="section-subtitle">
+            Age is just a number. Real leadership is about radical clarity, contagious energy, active listening, and bringing out the brilliance in every team member.
+          </p>
+        </div>
+
+        <div class="leadership-grid">
+          <div class="leadership-trait-card">
+            <div class="trait-icon">🔥</div>
+            <h3>Bias for Action (The "Doer" Heart)</h3>
+            <p>
+              I don't get paralyzed in endless theoretical debates. I test small, learn quickly, iterate, and generate momentum that rallies teams forward.
+            </p>
+          </div>
+
+          <div class="leadership-trait-card">
+            <div class="trait-icon">🤝</div>
+            <h3>Empathetic Collaboration</h3>
+            <p>
+              Being a jack of all trades means I can speak the language of coders, artists, operators, and strategists — breaking down silos with high emotional intelligence.
+            </p>
+          </div>
+
+          <div class="leadership-trait-card">
+            <div class="trait-icon">🌱</div>
+            <h3>Relentless Learning Appetite</h3>
+            <p>
+              I am hungry to learn. I don't pretend to know everything — I ask sharp questions, respect experienced mentors, and absorb knowledge like a sponge.
+            </p>
+          </div>
+
+          <div class="leadership-trait-card">
+            <div class="trait-icon">🎯</div>
+            <h3>Grit & Resilience</h3>
+            <p>
+              Falling down 70 times on wheels or getting average scores on an exam only sharpens my determination. I turn perceived setbacks into launchpads.
+            </p>
+          </div>
+        </div>
+
+        <!-- Quote Banner -->
+        <div class="banner-leadership">
+          <div class="banner-leadership-inner">
+            <div class="banner-badge">MY PLEDGE</div>
+            <h3>"I may be 18, but I bring the hunger of a founder, the curiosity of a scientist, and the soul of an artist."</h3>
+            <p>Ready to contribute, learn from world-class builders, and create meaningful impact.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Console / Terminal Explorer -->
+    <section class="section terminal-section" id="terminal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">DEV PLAYGROUND</span>
+          <h2 class="section-title">The Interactive "Shreya Terminal"</h2>
+          <p class="section-subtitle">
+            Curious about what makes me tick? Click any command below or type your own query to inspect my mind.
+          </p>
+        </div>
+
+        <div class="terminal-window">
+          <div class="terminal-bar">
+            <div class="terminal-buttons">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">shreya@polymath:~$ bash interactive.sh</div>
+            <div class="terminal-mode">v1.8.0-live</div>
+          </div>
+
+          <div class="terminal-body" id="terminalOutput">
+            <div class="term-line welcome-line">
+              <span class="prompt-user">shreya@universe:~$</span> 
+              <span>Welcome to Shreya Shree's Polymath Console. Type or click any query below.</span>
+            </div>
+            <div class="term-line info-line">
+              <span class="sys-tag">[SYSTEM]</span> 
+              <span>Initialized profile: Shreya Shree (Age: 18) | Focus: Aerospace, Textiles, Tech, Biz</span>
+            </div>
+          </div>
+
+          <!-- Suggested Quick Commands -->
+          <div class="terminal-quick-cmds">
+            <button class="cmd-chip" data-cmd="shreya.whoami()">shreya.whoami()</button>
+            <button class="cmd-chip" data-cmd="shreya.the70PercentTruth()">shreya.the70PercentTruth()</button>
+            <button class="cmd-cmd" data-cmd="shreya.passions()">shreya.passions()</button>
+            <button class="cmd-chip" data-cmd="shreya.whyJackOfAllTrades()">shreya.whyJackOfAllTrades()</button>
+            <button class="cmd-chip" data-cmd="shreya.rollerSkatePlaylist()">shreya.rollerSkatePlaylist()</button>
+            <button class="cmd-chip" data-cmd="shreya.futureVision()">shreya.futureVision()</button>
+            <button class="cmd-chip" data-cmd="clear">clear</button>
+          </div>
+
+          <!-- Terminal Input Row -->
+          <form class="terminal-input-row" id="terminalForm">
+            <span class="prompt-symbol">❯</span>
+            <input type="text" id="terminalInput" class="terminal-input" placeholder="Type a command or click one above (e.g., 'help')..." autocomplete="off">
+            <button type="submit" class="btn-term-run">Execute</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect / Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">OPEN TO OPPORTUNITIES & LEARNING</span>
+          <h2 class="section-title">Let’s Build, Learn, or Collaborate</h2>
+          <p class="section-subtitle">
+            Whether you are working in aerospace, sustainable textiles, tech, or looking for an energetic, relentless young leader for your initiative — my door is wide open.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-sidebar">
+            <div class="glass-card contact-info-card">
+              <div class="card-icon-circle">📍</div>
+              <div>
+                <h4>Location & Availability</h4>
+                <p>India • Open to remote global collaborations, internships, and dynamic team initiatives.</p>
+              </div>
+            </div>
+
+            <div class="glass-card contact-info-card">
+              <div class="card-icon-circle">⚡</div>
+              <div>
+                <h4>Current Status</h4>
+                <p>18yo High-Agency Polymath • Actively seeking mentors, project partners, and learning opportunities.</p>
+              </div>
+            </div>
+
+            <div class="glass-card contact-info-card">
+              <div class="card-icon-circle">✉️</div>
+              <div>
+                <h4>Direct Email</h4>
+                <p class="email-text">shreyashree.connect@gmail.com</p>
+                <button class="btn btn-sm btn-outline" id="btnCopyEmail2" data-copy="shreyashree.connect@gmail.com">
+                  Copy Email Address
+                </button>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links-box">
+              <span class="social-label">Find me across the web:</span>
+              <div class="social-chips">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-chip">
+                  <span>💼 LinkedIn</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-chip">
+                  <span>🐙 GitHub</span>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-chip">
+                  <span>📸 Instagram</span>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-chip">
+                  <span>🐦 X / Twitter</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="glass-card contact-form-card">
+            <h3 class="form-title">Send Me a Message</h3>
+            <p class="form-desc">Got advice, an exciting venture, a tech project, or want to talk aerospace & textiles? Drop a note!</p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="senderName">Your Name <span class="req">*</span></label>
+                  <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Maya Chen" required>
+                  <span class="error-msg" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="senderEmail">Your Email <span class="req">*</span></label>
+                  <input type="email" id="senderEmail" name="email" class="form-input" placeholder="e.g. maya@example.com" required>
+                  <span class="error-msg" id="emailError"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="messageTopic">Topic of Conversation</label>
+                <select id="messageTopic" name="topic" class="form-select">
+                  <option value="Mentorship & Learning">💡 Mentorship & Guidance</option>
+                  <option value="Project Collaboration">🚀 Project Collaboration</option>
+                  <option value="Aerospace / Tech Talk">🛸 Aerospace & Tech Talk</option>
+                  <option value="Textile & Material Science">🧵 Smart Textiles & Design</option>
+                  <option value="Leadership & Business">💼 Business & Leadership</option>
+                  <option value="Just saying Hi!">👋 Just saying hello!</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage">Your Message <span class="req">*</span></label>
+                <textarea id="senderMessage" name="message" rows="5" class="form-textarea" placeholder="What should we build or discuss together?" required></textarea>
+                <span class="error-msg" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="btnSubmitForm">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Deep Dive Modal (Aerospace, Textiles, Tech, Business) -->
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-icon" id="modalIcon">🚀</span>
+        <div>
+          <span class="modal-category" id="modalCategory">DOMAIN DEEP DIVE</span>
+          <h3 class="modal-title" id="modalTitle">Vision Title</h3>
+        </div>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary modal-close-action" id="modalCloseAction">Close Insight</button>
+        <a href="#contact" class="btn btn-primary modal-action-btn" id="modalContactBtn">Discuss This Area With Shreya</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="logo-symbol">⚡</span>
+        <span class="logo-text">SHREYA SHREE</span>
+        <p class="footer-tagline">18yo Polymath • Skater • Artist • Future Industry Leader</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Back to Top ↑</a>
+        <a href="#about">The Mindset</a>
+        <a href="#industries">Industries</a>
+        <a href="#creative">Creative Lab</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Shreya Shree. Crafted with authentic passion, code, and boundless energy.</p>
+        <div class="footer-badge">
+          <span>“Jack of all trades, oftentimes better than master of one.”</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
